@@ -6,9 +6,14 @@ body {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
+.image {
+  position: absolute;
+  width: 40%;
+}
+
 .contrast {
   border: 5px solid blue;
-
+  padding: 5px;
   margin-left: 800px;
   width: 640px;
 }
