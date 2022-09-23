@@ -9,40 +9,50 @@
     <title>Sign Up Now!</title>
 </head>
 <body>
-    <div class="photo">
-        <img class="image" src="./images/foggyRoad.jpg" alt="A photo of a foggy mountain road." height="840px" width="800px" max-height="840px" max-width="600px">
-    </div>
-    <div class="contrast">
-        <div class="headText">
-            <p>
-                This website does not currently sign you up for anything. This is simply an example of what a sign up form would look like. 
-            </p>
-            <p>
-                If you would like to create a real sign up form sign up to recieve an email. 
-            </p>
+    <div class="content">
+        <div class="photo">
+            <img class="image" src="./images/foggyRoad.jpg" alt="A photo of a foggy mountain road." height="840px" width="800px" max-height="840px" max-width="600px">
         </div>
-        <div class="formContainer">
-            <div class="callToAction">
-                <h2>Sign Up Now!</h2>
-            </div>
-            <div class="form">
-                <div class="inputs">
-                    <form action="" method="post">
-                        <input type="text">
-                        <input type="text">
-                        <input type="email">
-                        <input type="number">
-                        <input type="password">
-                        <input type="password">
-                        <button type="submit">Sign Up</button>
-                        <button type="reset">Reset</button>
-                    </form>
-                </div>    
-            </div>
-            <div class="logIn">
+        <div class="contrast">
+            <div class="headText">
                 <p>
-                    Already have an account? <a href="">Log in</a>
+                    <strong>This website does not currently sign you up for anything. This is simply an example of what a sign up form would look like. </strong>
                 </p>
+                <p>
+                <strong> If you would like to create a real sign up form sign up to recieve an email. </strong>
+                </p>
+            </div>
+            <div class="formContainer">
+                <div class="callToAction">
+                    <h2>Sign Up Now!</h2>
+                </div>
+                <div class="form">
+                    <div class="inputs">
+                        <form action="" method="post">
+                            <fieldset>
+                                <label for="First Name">First Name *</label>
+                                    <input type="text" id="firstName"  name="firstName" placeholder="*First Name*" required>
+                                <label for="lastName">Last Name *</label> 
+                                    <input type="text" id="lastName" name="lastName" placeholder="*Last Name*" required>
+                                <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="*Email*" required>
+                                <label for="phoneNumber">Phone Number </label>
+                                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                                <label for="password">Password *</label>
+                                    <input type="password" id="password" name="password" placeholder="*Password*" required>
+                                <label for="reEnterPassword">Re-enter Password *</label>
+                                    <input type="password" id="reEnterPassword" name="reEnterPassword" placeholder="*Re-enter Password*" required>
+                                <button type="submit">Sign Up</button>
+                                <button type="reset">Reset</button>
+                            </fieldset>
+                        </form>
+                    </div>    
+                </div>
+                <div class="logIn">
+                    <p>
+                        Already have an account? <a href="">Log in</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

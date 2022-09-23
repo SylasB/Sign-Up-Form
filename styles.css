@@ -9,38 +9,59 @@ body {
 .image {
   position: absolute;
   width: 40%;
+  min-width: 500px;
+  min-height: 700px;
 }
 
 .contrast {
   border: 5px solid blue;
   padding: 5px;
-  margin-left: 800px;
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
   width: 640px;
+  background-color: aliceblue;
 }
 
 .headText {
+  font-size: large;
 }
 
 .callToAction {
+  font-size: large;
+  text-align: center;
 }
 
 .form {
-  height: 500px;
-  width: 600px;
+  height: 300px;
+  width: 300px;
   margin: 5px;
+  margin-left: 150px;
 
   border: 5px solid black;
   align-self: center;
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1000px;
   background-color: #2196f3;
   padding: 10px;
 }
 
+:focus {
+  border: red 1px solid;
+}
+
+label {
+  color: black;
+}
+
 #inputs {
-  border: 2px solid red;
+  border: 5px solid red;
   height: 400px;
   width: auto;
 
