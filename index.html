@@ -11,47 +11,56 @@
 <body>
     <div class="content">
         <div class="photo">
-            <img class="image" src="./images/foggyRoad.jpg" alt="A photo of a foggy mountain road." height="840px" width="800px" max-height="840px" max-width="600px">
+            <div>
+                <img src="./images/Logo_SGB.jpg" alt="A brand LOGO">
+                <h1>Sign-up Now</h1>
+            </div>
+            <p>
+                Photo credits here
+            </p>
         </div>
         <div class="contrast">
-            <div class="headText">
-                <p>
-                    <strong>This website does not currently sign you up for anything. This is simply an example of what a sign up form would look like. </strong>
-                </p>
-                <p>
-                <strong> If you would like to create a real sign up form sign up to recieve an email. </strong>
-                </p>
-            </div>
             <div class="formContainer">
-                <div class="callToAction">
+                 <div class="headText">
+                    <p>
+                        <strong>This website does not currently sign you up for anything. This is simply an example of what a sign up form would look like. </strong>
+                    </p>
+                    <p>
+                        <strong> If you would like to create a real sign up form sign up to recieve an email. </strong>
+                    </p>
                     <h2>Sign Up Now!</h2>
                 </div>
                 <div class="form">
                     <div class="inputs">
-                        <form action="" method="post">
-                            <fieldset>
-                                <label for="First Name">First Name *</label>
-                                    <input type="text" id="firstName"  name="firstName" placeholder="*First Name*" required>
-                                <label for="lastName">Last Name *</label> 
-                                    <input type="text" id="lastName" name="lastName" placeholder="*Last Name*" required>
-                                <label for="email">Email *</label>
-                                    <input type="email" id="email" name="email" placeholder="*Email*" required>
-                                <label for="phoneNumber">Phone Number </label>
+                        <form action="" method="post" id="myForm">
+                                <label for="firstName">First Name:
+                                    <input type="text" id="firstName"  name="firstName" placeholder="First Name*" required>
+                                </label>
+                                <label for="lastName">Last Name:
+                                    <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+                                </label> 
+                                <label for="email">Email:
+                                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                                </label>    
+                                <label for="phoneNumber">Phone Number:
                                     <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
-                                <label for="password">Password *</label>
-                                    <input type="password" id="password" name="password" placeholder="*Password*" required>
-                                <label for="reEnterPassword">Re-enter Password *</label>
-                                    <input type="password" id="reEnterPassword" name="reEnterPassword" placeholder="*Re-enter Password*" required>
-                                <button type="submit">Sign Up</button>
-                                <button type="reset">Reset</button>
-                            </fieldset>
+                                </label>
+                                <label for="password">Password *
+                                    <input type="password" id="password" name="password" placeholder="Password*" required>
+                                </label>
+                                <label for="reEnterPassword">Re-enter Password:
+                                    <input type="password" id="reEnterPassword" name="reEnterPassword" placeholder="Re-enter Password*" required>
+                                </label>
                         </form>
                     </div>    
                 </div>
                 <div class="logIn">
-                    <p>
-                        Already have an account? <a href="">Log in</a>
-                    </p>
+                    <div>
+                        <button type="submit" form="myForm">Sign Up</button>
+                        <p>
+                            Already have an account? <a href="">Log in</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

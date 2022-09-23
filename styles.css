@@ -2,73 +2,168 @@
   font-family: Arial, "Times New Roman", Times;
 }
 
-body {
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+html body {
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0px;
 }
 
-.image {
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.photo {
+  flex-grow: 1;
+  position: relative;
+  width: 60vw;
+  min-width: 345px;
+  height: 100vh;
+  background: url(./images/foggyRoad.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.photo div {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+  line-height: 2rem;
+  padding: 0px 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.575);
   position: absolute;
-  width: 40%;
-  min-width: 500px;
-  min-height: 700px;
+  bottom: 0px;
+  right: 5px;
 }
 
-.contrast {
-  border: 5px solid blue;
-  padding: 5px;
-  position: absolute;
-  right: 0;
-  margin: 10px;
-  margin-top: 150px;
-  margin-right: 100px;
-  margin-left: 100px;
-  width: 640px;
-  background-color: aliceblue;
-}
-
-.headText {
-  font-size: large;
-}
-
-.callToAction {
-  font-size: large;
-  text-align: center;
-}
-
-.form {
-  height: 300px;
-  width: 300px;
-  margin: 5px;
-  margin-left: 150px;
-
-  border: 5px solid black;
-  align-self: center;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 1000px;
-  background-color: #2196f3;
+.photo img {
+  width: 5rem;
   padding: 10px;
 }
 
-:focus {
-  border: red 1px solid;
+.contrast {
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 2;
+  background-color: rgb(240, 240, 240);
+}
 }
 
-label {
-  color: black;
+.headText,
+.logIn {
+  padding: 0px 2vw;
 }
 
-#inputs {
-  border: 5px solid red;
-  height: 400px;
-  width: auto;
-
-  text-align: center;
-  align-self: center;
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.2rem 2vw 3rem 2vw;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
 }
 
 .logIn {
-  text-align: center;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  width: 60vw;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  position: relative top;
+  width: 15rem;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(5, 153, 0);
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+input:focus {
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100);
+}
+
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
+}
+
+button[type="submit"] {
+  padding: 0.8rem 1.3rem;
+  font-size: 1.3rem;
+  background-color: rgb(0, 105, 14);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: -1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(126, 39, 126);
+}
+
+@media screen and (max-width: 850px) {
+  .content {
+    flex-direction: column;
+  }
+  .photo {
+    width: 100vw;
+    height: 20rem;
+  }
+
+  .headText div,
+  .form,
+  .logIn div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formContainer,
+  form,
+  .logIn {
+    width: 100vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  label {
+    margin-bottom: 25px;
+  }
 }
